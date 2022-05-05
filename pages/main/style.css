@@ -64,7 +64,6 @@ body {
     top: calc(50% - 15px/2 + 22.5px);
     font-family: 'Arial';
     font-style: normal;
-
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.06em;
@@ -307,6 +306,7 @@ body {
 /*  */
 
 .our-pets-section {
+    
     width: 100%;
     height: 877px;
     left: 0%;
@@ -317,6 +317,10 @@ body {
 
 .pets-content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 1200px;
     height: 697px;
     left: calc(50% - 1200px/2);
@@ -324,18 +328,19 @@ body {
 }
 
 .pets-title {
-    position: relative;
     width: 400px;
     height: 90px;
-    margin: auto;
-    top: 0px;
-    display: flex;
+    left: 400px;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.08em;
+
 }
 
 .pets-title h3{
+    width: 400px;
+    height: 90px;
+    top: 0px;
+    text-align: center;
+    letter-spacing: 0.06em;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -345,26 +350,27 @@ body {
 }
 
 .slider-animals {
-    position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 435px;
+    width: 100%;
     top: 60px;
 }
 
 .animal-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 270px;
     height: 435px;
     background-color: #FAFAFA;
+    cursor: pointer;
 }
 
-.animal {
+.animal-image {
     width: 270px;
     height: 270px;
     background-position: center center;
@@ -395,7 +401,6 @@ body {
 }
 
 .name{
-    position: relative;
     display: flex;
     align-items: center;
     text-align: center;
@@ -406,7 +411,6 @@ body {
     top: 100px;
 }
 .lern-more{
-    position: relative;
     background-color: #FAFAFA;
     border: solid 2px #FDDCC4;
     transition: 0.3s ease;
@@ -422,27 +426,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .lern-more:hover{
     background-color: #FDDCC4;
 }
-.btn-center{
+
+.block-btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
     display: flex;
-    justify-content: center;
-    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    height: 52px;
+    left: calc(50% - 207px/2 - 126.5px);
+    bottom: 0px;
+    letter-spacing: 0.06em;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
 }
+
+.block-btn:hover {
+    background-color: #f1d6c2;;
+}
+
 .get-to{
-    width: 261px;
     align-self: center;
 }
 
-/* .animal-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 270px;
-    height: 435px;
-    background-color: #FAFAFA;
-} */
