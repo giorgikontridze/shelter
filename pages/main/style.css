@@ -49,7 +49,7 @@ body {
 
 .logo h1 {
     font-weight: 400;
-    width: 184px;
+    width: 185px;
     height: 35px;
     left: 0px;
     top: calc(50% - 35px/2 - 12.5px);
@@ -220,7 +220,6 @@ body {
 }
 
 .main-btn a {
-    position: static;
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
