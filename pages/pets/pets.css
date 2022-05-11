@@ -13,6 +13,8 @@
 body {
     display: flex;
     flex-direction: column;
+    width: 1280px;
+    margin: auto;
 }
 
 .container{
@@ -22,7 +24,7 @@ body {
 
 .block {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 1200px;
     margin: auto;
 }
@@ -38,6 +40,7 @@ body {
 }
 
 .header-content {
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -149,3 +152,322 @@ body {
 
 
 /* Main */
+
+
+.main {
+    display: flex;
+    height: 1342px;
+    background: #F6F6F6;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1162px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+main .container {
+    margin: 0 auto;
+}
+
+.pets-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 697px;
+    left: calc(50% - 1200px/2);
+    top: 80px;
+}
+
+.pets-title {
+    width: 400px;
+    height: 90px;
+    left: 400px;
+    align-items: center;
+
+}
+
+.pets-title h3{
+    width: 400px;
+    height: 90px;
+    top: 0px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+}
+
+.slider-animals {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+}
+
+.animal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 435px;
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+
+.animal-image {
+    width: 270px;
+    height: 270px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrow{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.arrow:hover{
+    background-color: #F1CDB3;
+}
+.left{
+    top: 50%;
+    left: 0;
+}
+.right{
+    top: 50%;
+    right: 0;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    font-size: medium;
+    text-align: center;
+    top: 100px;
+}
+.lern-more{
+    background-color: #FAFAFA;
+    border: solid 2px #FDDCC4;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: #545454;
+    border-radius: 100px;
+    width: 187px;
+    height: 52px;
+    top: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lern-more:hover{
+    background-color: #FDDCC4;
+}
+
+.animal-info:hover {
+	background-color : rgb(255, 255, 255);
+    border: 2px solid transparent;
+}
+
+.animal-info:hover .lern-more {
+	background-color : #FDDCC4;
+	transition-duration: 0.5s;
+	border: 2px solid transparent;
+}
+
+.block-btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    height: 52px;
+    left: calc(50% - 207px/2 - 126.5px);
+    bottom: 0px;
+    letter-spacing: 0.06em;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.block-btn:hover {
+    background-color: #f1d6c2;;
+}
+
+.get-to{
+    align-self: center;
+}
+
+
+/* Pages */
+
+.page-switcher{
+    display: flex;
+    gap: 20px;
+}
+.arrow-btn{
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    background: #F6F6F6;
+
+}
+.next:hover{
+    cursor: pointer;
+    background-color:#F1CDB3 ;
+}
+.previous{
+    border: 2px solid #CDCDCD;
+    background: #F6F6F6;
+}
+.current-btn{
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    border: 2px solid #F1CDB3;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    color: #292929;
+}
+
+
+/* Footer */
+
+.footer {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/start-screen-gradient-background.svg);
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.footer-content {
+    width: 1200px;
+    margin: 40px auto;
+    height: 310px;
+    left: 40px;
+    top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: 
+        'footer-block1'
+        'footer-block2'
+        'footer-img';
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.footer-block1 h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-align:left;
+    align-items: flex-start;
+}
+
+.footer-block2 h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-align:left;
+    align-items: flex-start;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.footer-block1 {
+    width: 278px;
+    height: 234px;
+    left: 0px;
+    top: 16px;
+    align-items: flex-start;
+    margin-right: 0px;
+}
+
+.footer-block2 {
+    width: 302px;
+    height: 234px;
+    left: 0px;
+    top: 16px;
+    align-items: flex-start;
+    margin-right: 0px;
+}
+
+.footer-img {
+    width: 300px;
+    height: 310px;
+    left: calc(50% - 300px/2 + 450px);
+    top: 0px;
+    grid-area: auto;
+    align-self: center;
+}
+
+.footer-contact {
+    padding-top: 6px;
+    justify-content: center;
+}
+
+.footer-contact-point {
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer-text {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #F1CDB3;
+	margin-left: 20px;
+	text-decoration: none;
+}
