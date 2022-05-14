@@ -3,26 +3,16 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Shelter</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/title.png">
+    <title>Cosy House</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="http://reactstorefronts.com/static/fonts/font-awesome/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link href="http://fonts.cdnfonts.com/css/segoe-wp" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/42432c60fd.js" crossorigin="anonymous"></script>
     <script src='style.css'></script>
     <script src="script.js"></script>
-
 </head> 
 <body>
 
-    <!--   HEADER SECTION   -->
+    <!-- Header -->
+
     <section class="start-screen-section" style="background-image: url(../../assets/images/start-screen-gradient-background.svg);">
         <div class="container">
             <header class="header">
@@ -33,12 +23,15 @@
                 <nav class="nav-bar">
                     <ul>
                         <a class="active" href="#about-section">About the shelter</a>
-                        <a class="li" href="#our-pets-section">Our pets</a>
+                        <a class="li" href="#slider-section">Our pets</a>
                         <a class="li" href="#help-section">Help the shelter</a>
                         <a class="li" href="#footer-section">Contacts</a>
                     </ul>
                 </nav>
             </header>
+
+    <!-- Not Only -->
+
             <main class="main-section">
                     <div class="main-items">
                         <div class="main-info">
@@ -53,13 +46,14 @@
                             </div>
                         </div>
                         <div class="main-photo" style="background-image: url(../../assets/images/main\ dog.svg);">
-        
                         </div>
                     </div>
             </main>
         </div>
        
     </section>
+
+    <!-- About -->
 
     <section id="about-section">
         <div class="container">
@@ -86,14 +80,170 @@
             </div>
         </div>
     </section>
-    <section class="our-pets-section"></section>.
-    <section class="help-section"></section>
-    <section class="donation-section"></section>
 
-    <footer></footer>
+    <!-- Our Friends -->
 
+    <section id="slider-section" class="our-pets-section">
+        <div class="container">
+            <div class="pets-content">
+                <div class="pets-title">
+                    <h3>Our friends who <br>
+                        are looking for a house
+                    </h3>
+                </div>
+                <div class="slider-animals">
+                    <div class="arrow left" style="background-image: url(../../assets/icons/arrow-left.png);"></div>
+                    <div class="animal-info">
+                        <div class="animal-image" style="background-image: url(../../assets/images/pets-katrine.svg);">
+                        </div>
+                        <div class="name">
+                            Katrine
+                        </div>
+                        <div class="btn lern-more">
+                            Learn more
+                        </div>
+                    </div>
+                    <div class="animal-info">
+                        <div class="animal-image" style="background-image: url(../../assets/images/pets-jennifer.svg);">
+                        </div>
+                        <div class="name">
+                            Jennufer
+                        </div>
+                        <div class="btn lern-more">
+                            Learn more
+                        </div>
+                    </div>
+                    <div class="animal-info">
+                        <div class="animal-image" style="background-image: url(../../assets/images/pets-woody.svg);">
+                        </div>
+                        <div class="name">
+                            Woody
+                        </div>
+                        <div class="btn lern-more">
+                            Learn more
+                        </div>
+                    </div>
+                    <div class="arrow right" style="background-image: url(../../assets/icons/button_arrow.png);"></div>
+                </div>
+                <button type="button" class="block-btn get-to" onclick="buttonGoToPetsPage()">Get to know the rest</button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Help -->
 
+    <section id="help-section" class="help-section">
+        <div class="container">
+            <div class="help-block">
+                <div class="help-title">
+                    <h3>How you can help
+                        our shelter
+                    </h3>
+                </div>
+                <div class="help-icons">
+                    <div class="help-img help-img1">
+                        <img src="../../assets/icons/pet-food.svg" alt="pet icon">
+                        <h4 class="img-name">Pet food</h4>
+                    </div>
+                    <div class="help-img help-img2">
+                        <img src="../../assets/icons/transportation.svg" alt="transportation icon">
+                        <h4 class="img-name">Transportation</h4>
+                    </div>
+                    <div class="help-img help-img3">
+                        <img src="../../assets/icons/toys.svg" alt="toys icon">
+                        <h4 class="img-name">Toys</h4>
+                    </div>
+                    <div class="help-img help-img4">
+                        <img src="../../assets/icons/bowls-and-cups.svg" alt="bowls and cups icon">
+                        <h4 class="img-name">Bowls and cups</h4>
+                    </div>
+                    <div class="help-img help-img5">
+                        <img src="../../assets/icons/shampoos.svg" alt="shampoos icon">
+                        <h4 class="img-name">Shampoos</h4>
+                    </div>
+                    
+                    <div class="help-img help-img6">
+                        <img src="../../assets/icons/vitamins.svg" alt="vitamins icon">
+                        <h4 class="img-name">Vitamins</h4>
+                    </div>
+                    <div class="help-img help-img7">
+                        <img src="../../assets/icons/medicines.svg" alt="medicines icon">
+                        <h4 class="img-name">Medicines</h4>
+                    </div>
+                    <div class="help-img help-img8">
+                        <img src="../../assets/icons/collars-or-leashes.svg" alt="collars or leashes icon">
+                        <h4 class="img-name">Collars / leashes</h4>
+                    </div>
+                    <div class="help-img help-img9">
+                        <img src="../../assets/icons/sleeping-area.svg" alt="sleeping area icon">
+                        <h4 class="img-name">Sleeping areas</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Donation -->
 
+    <section class="donation-section">
+        <div class="container">
+            <div class="donation-block">
+                <img class="donation-dog" src="../../assets/images/donation-dog.svg" alt="sad dog">
+                <div class="donation-info">
+                    <h3>You can also <br> make a donation</h3>
+                    <h5>Name of the bank / Type of bank account</h5>
+                    <div class="credit-card">
+                        <div class="btn credit-card-content">
+                            <img class="credit-card-icon" src="../../assets/icons/credit-card.svg" alt="card icon">
+                            <a id="credit-card-number" href="javascript:;">8380 2880 8028 8791 7435</a>
+                        </div>
+                    </div>
+                    <p>
+                        Legal information and lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit.
+                        Maecenas a ipsum at libero sagittis
+                        dignissim sed ac diam. Praesent
+                        ultrices maximus tortor et vulputate.
+                        Interdum et malesuada fames ac ante
+                        ipsum primis in faucibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer-section" id="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-block footer-block1">
+                    <h3>For questions <br> and suggestions
+                    </h3>
+                    <div class="footer-contact">
+                        <a href="mailto:email@shelter.com"><img src="../../assets/icons/mail.svg" alt="icon-email"></a>
+                        <a href="mailto:email@shelter.com" class="footer-text">email@shelter.com</a>
+                        
+                    </div>
+                    <div class="footer-contact">
+                        <a href="tel:+136745677554"><img src="../../assets/icons/phone.svg" alt="phone"></a>
+                        <a href="tel:+136745677554" class="footer-text">+13 674 567 75 54</a>
+                    </div>
+                </div>
+                <div class="footer-block footer-block2">
+                    <h3>We are waiting <br> for your visit
+                    </h3>
+                    <div class="footer-contact footer-contact-point">
+                        <a href="https://goo.gl/maps/tnH14oCpLKEokHBg7" target="_blank"><img src="../../assets/icons/pin.svg" alt="icon-marker"></a>
+                        <a href="https://goo.gl/maps/tnH14oCpLKEokHBg7" target="_blank" class="footer-text">1 Central Street, Boston (entrance from the store)</a>
+                    </div>
+                    <div class="footer-contact footer-contact-point">
+                        <a href="https://goo.gl/maps/tnH14oCpLKEokHBg7" target="_blank"><img src="../../assets/icons/pin.svg" alt="icon-marker"></a>
+                        <a href="https://goo.gl/maps/tnH14oCpLKEokHBg7" target="_blank" class="footer-text">18 South Park, London </a>
+                    </div>
+                </div>
+                <img src="../../assets/images/footer-puppy.svg" alt="footer-puppy" class="footer-img">
+            </div>
+        </div>
+    </footer>
 </body>
