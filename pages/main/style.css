@@ -147,6 +147,7 @@ li a {
 .main-photo{
     width: 100%;
     min-height: 728px;
+    background-image: url(../../assets/images/main\ dog.svg);
 }
 
 .main-items {
@@ -207,46 +208,50 @@ li a {
 /* About */
 
 #about-section {
-    height: 588px;
+    /* height: 588px;
     left: 0%;
     right: 0%;
-    top: 908px;
+    top: 908px; */
     background: #FFFFFF;
 }
 
 .about-content{
-    position: relative;
-    width: 1200px;
-    height: 408px;
+    /* position: relative; */
+    max-width: 1200px;
+    /* height: 408px;
     left: calc(50% - 1200px/2);
-    top: 80px;
+    top: 80px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 83px;
+    margin: auto;
 }
 
 .dog-pet-photo{
-    width: 300px;
-    height: 408px;
-    left: 175px;
-    top: 0px;
+    background-image: url(../../assets/images/about-pets.svg);
+    min-width: 300px;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 .about {
-    width: 430px;
-    height: 408px;
+    max-width: 430px;
+    min-height: 408px;
+    /* height: 408px;
     left: 658px;
-    top: 14px;
+    top: 14px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .about h3 {
-    width: 370px;
-    height: 90px;
+    max-width: 370px;
+    /* height: 90px;
     left: 0px;
-    top: 0px;
+    top: 0px; */
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -256,8 +261,8 @@ li a {
     color: #545454;
 }
 
-.about, .p-1, .p-2 {
-    width: 430px;
+.p-1, .p-2 {
+    max-width: 430px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -265,17 +270,17 @@ li a {
 }
 
 .about .p-1 {
-    height: 96px;
+    /* height: 96px;
     left: 0px;
-    top: 115px;
+    top: 115px; */
     line-height: 160%;
     color: #4C4C4C;
 }
 
 .about .p-2 {
-    height: 144px;
+    /* height: 144px;
     left: 0px;
-    top: 236px;
+    top: 236px; */
     line-height: 160%;
     color: #4C4C4C;
 }
